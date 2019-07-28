@@ -6,4 +6,4 @@ spring:
     password: admin
   application:
     name: order
-env: dev2
+env: dev
