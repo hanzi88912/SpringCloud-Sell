@@ -9,4 +9,4 @@ spring:
 env: dev32
 girl: 
       name: huya
-      age: 29
+      age: 27
