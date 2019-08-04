@@ -6,7 +6,7 @@ spring:
     password: admin
   application:
     name: order
-env: dev23
+env: dev33
 girl: 
       name: huya
       age: 27
