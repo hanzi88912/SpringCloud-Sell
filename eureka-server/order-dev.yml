@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3367/SpringCloud_Sell?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: admin
+  application:
+    name: order
+env: dev33
+girl: 
+      name: huya
+      age: 30
