@@ -1,0 +1,30 @@
+# 下面的配置是我自己加的，如果不加访问/config/order-test.yml时会报错
+# com.netflix.zuul.exception.ZuulException: Forwarding error
+# Caused by: com.netflix.hystrix.exception.HystrixRuntimeException: config timed-out and no fallback available.
+# Caused by: java.util.concurrent.TimeoutException: null
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  eureka:
+  enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+    #简洁写法
+    product: /myProduct/**
+  #排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder
+management:
+  security:
+    enabled: false
