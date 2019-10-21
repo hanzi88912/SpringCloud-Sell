@@ -17,11 +17,11 @@ hystrix:
 zuul:
   routes:
     myProduct:
-      path: /myProduct/**
+      path: /myProduct1/**
       serviceId: product
       sensitiveHeaders:
     #简洁写法
-    product: /myProduct/**
+    #product: /myProduct/**
   #排除某些路由
   ignored-patterns:
     - /**/product/listForOrder
