@@ -17,7 +17,7 @@ hystrix:
 zuul:
   routes:
     myProduct:
-      path: /myProduct2/**
+      path: /myProduct/**
       serviceId: product
       sensitiveHeaders:
     #简洁写法
@@ -36,4 +36,4 @@ spring:
     password: guest    
 girl:
   name: "hhh"
-  age: 23
+  age: 24
