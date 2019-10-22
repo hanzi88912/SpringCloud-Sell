@@ -14,17 +14,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
-zuul:
-  routes:
-    myProduct:
-      path: /myProduct2/**
-      serviceId: product
-      sensitiveHeaders:
-    #简洁写法
-    #product: /myProduct/**
-  #排除某些路由
-  ignored-patterns:
-    - /**/product/listForOrder
-management:
-  security:
-    enabled: false
