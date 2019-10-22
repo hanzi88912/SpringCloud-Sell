@@ -28,6 +28,3 @@ zuul:
 management:
   security:
     enabled: false
-girl:
-  name: "hhh"
-  age: 25
