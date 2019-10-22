@@ -34,3 +34,6 @@ spring:
     port: 5672
     username: guest
     password: guest    
+girl:
+  name: "hhh"
+  age: 23
