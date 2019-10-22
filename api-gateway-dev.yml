@@ -17,7 +17,7 @@ hystrix:
 zuul:
   routes:
     myProduct:
-      path: /myProduct/**
+      path: /myProduct2/**
       serviceId: product
       sensitiveHeaders:
     #简洁写法
