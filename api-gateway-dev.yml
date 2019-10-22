@@ -28,11 +28,6 @@ zuul:
 management:
   security:
     enabled: false
-rabbitmq:
-  host: 192.168.0.198
-  port: 5672
-  username: guest
-  password: guest
 girl:
   name: "hh"
   age: 22
