@@ -8,5 +8,5 @@ spring:
     name: order
 env: dev33
 girl: 
-      name: huya1
+      name: huya
       age: 22
